@@ -1,0 +1,249 @@
+/* section one */
+.headerContent {
+  width: 100%;
+}
+.imgContent {
+  width: 100%;
+}
+.TextofBanner {
+  width: 100%;
+  position: absolute;
+  top: 68%;
+  transform: translateY(-50%);
+  line-height: 1.19;
+  justify-content: center;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: black 2px 5px 16px;
+  color: #fff;
+  font-weight: 650;
+  font-size: 56px;
+}
+
+/* section two */
+.visiov-container {
+  width: 100%;
+  text-align: center;
+}
+.heading-of-vision {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+.p-Of-Vision {
+  width: 100%;
+  line-height: 1.6;
+  justify-content: center;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* section three */
+.story {
+  width: 100%;
+  display: flex;
+  margin-top: 10%;
+}
+.story-container {
+  line-height: 1.6;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+.pera-H {
+  font-size: 22px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.pera-C,
+.pera-C2,
+.pera-C3 {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.right-side {
+  margin-left: 20%;
+}
+
+/* section four */
+.container-of-advisors {
+  width: 100%;
+}
+.H-P-container {
+  width: 100%;
+  line-height: 1.6;
+  justify-content: center;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.row-first {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+.row-second {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  margin-top: 5%;
+ 
+}
+.adv-description{
+  padding-left: 10%;
+}
+.ad_pera_{
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Advisor1 {
+  width: 150px;
+  height: 150px;
+  /* align-items: center; */
+}
+.content-pera {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.profile-pera {
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  
+}
+ 
+ @media (min-width:786px) and (max-width:2560px){
+  .story_im{
+    display: none;
+  }
+
+ }
+ @media (min-width:0px) and (max-width:786px){
+  .right-side{
+    display:none;
+  }
+ }
+@media (max-width: 1024px) {
+  /* section one */
+  .TextofBanner {
+    font-size: 42px;
+  }
+  /* section two */
+  .p-Of-Vision {
+    width: 70%;
+    display: flex;
+    margin-left: 20%;
+    font-size: 17px;
+  }
+  /* sectrion three */
+  .pera-C,
+  .pera-H {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 768px) {
+  /* section one */
+  .TextofBanner {
+    font-size: 28px;
+  }
+  /* section two */
+  .p-Of-Vision {
+    font-size: 15px;
+    margin-left: 13%;
+  }
+  /* section three */
+  .story-container {
+    margin-left: 7%;
+  }
+  .story {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .pera-
+ {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .pera-C2{
+    width: 100%;
+    font-size: 15px;
+
+  }
+  .pera-C3 {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .story_im{
+    width: 60%;
+    height: 32%;
+  }
+  
+  /* section four */
+  .row-first,
+  .row-second {
+    display: flex;
+    flex-direction: column;
+  }
+  .adv-description{
+    margin-left: 30%;
+  }
+  .ad_pera_{
+   font-size: 14px;
+  }
+ 
+}
+@media (max-width: 480px) {
+  /* section one */
+  .TextofBanner {
+    font-size: 20px;
+  }
+  /* section two */
+  .p-Of-Vision {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  /* section three */
+  .story-container {
+    margin-left: 8%;
+  }
+  .pera-C {
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .pera-C,
+  .pera-C2,
+  .pera-C3 {
+  font-size: 13px;
+  }
+  .adv-description{
+    margin-left: 20%;
+  }
+  
+}
+
+@media (max-width: 320px) {
+  /* section one */
+  .TextofBanner {
+    font-size: 12px;
+  }
+  .right-side {
+    margin-left: -51px;
+    margin-top: -223%;
+    position: absolute;
+    width: 20%;
+  }
+}
