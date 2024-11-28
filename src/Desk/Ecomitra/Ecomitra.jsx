@@ -50,7 +50,38 @@ import IconOfFacebook from "../Home/facebook-icon.png";
 import IconOfYouTube from "../Home/youtube-icon.png";
 import LogoOfSukriti from "../Home/Sukriti-Logo.svg";
 import Footer from "../Footer/Footer";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
+import { Carousel } from "react-responsive-carousel";
 
+const ImageCarousel = () => {
+  return (
+    <div className="carousel-container">
+      <Carousel
+        autoPlay
+        infiniteLoop
+        showThumbs={false}
+        showStatus={false}
+        centerMode
+        centerSlidePercentage={33.33} // Show 3 images at a time
+        dynamicHeight={false}
+        interval={3000}
+      >
+        <div>
+          <img src={Group1} alt="Group 1" />
+        </div>
+        <div>
+          <img src={Group2} alt="Group 2" />
+        </div>
+        <div>
+          <img src={Group3} alt="Group 3" />
+        </div>
+        <div>
+          <img src={Group4} alt="Group 4" />
+        </div>
+      </Carousel>
+    </div>
+  );
+};
 
 const Ecomitra = () => {
   return (
@@ -93,6 +124,9 @@ const Ecomitra = () => {
           <p className="heading-content-elat_h">WHY SANITATION ?</p>
         </div>
         <div>
+        <div>
+          <ImageCarousel />
+        </div>
           {/* Loading Screen */}
           <div className="jssorl-009-spin">
             <img
@@ -293,10 +327,12 @@ const Ecomitra = () => {
         </div>
         <div>
           <div class="ev_container">
-            <img id="play_btn" class="e_play_btn" src={playIcon} />
+            {/* <img id="play_btn" class="e_play_btn" src={playIcon} /> */}
             <video
               className="eco-vi-Img"
               poster={VideoImage}
+              controls
+              preload="metadata"
               src={EcoVideo}
               type="video/mp4"
             ></video>

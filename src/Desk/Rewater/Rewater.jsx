@@ -43,6 +43,109 @@ import bhowaliTownImage from "../Rewater/image_1.png";
 import TiliyarLakeImage from "../Rewater/image _2.png";
 import RadhakundImage from "../Rewater/image (2).png";
 import Footer from "../Footer/Footer";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
+import { Carousel } from "react-responsive-carousel";
+
+
+const ImageCarousel = () => {
+  return (
+    <div className="carousel-container">
+      <Carousel
+        autoPlay
+        infiniteLoop
+        showThumbs={false}
+        showStatus={false}
+        centerMode
+        centerSlidePercentage={33.33} // Show 3 images at a time
+        dynamicHeight={false}
+        interval={3000}
+      >
+        <div>
+          <img src={ImageOne} alt="Image 1" />
+        </div>
+        <div>
+          <img src={ImageTwo} alt="Image 2" />
+        </div>
+        <div>
+          <img src={ImageThree} alt="Image 3" />
+        </div>
+        <div>
+          <img src={Imagefour} alt="Image 4" />
+        </div>
+      </Carousel>
+    </div>
+  );
+};
+
+const ImageCarouselRewaterEnsure = () => {
+  return (
+    <div className="carousel-container">
+      <Carousel
+        autoPlay
+        infiniteLoop
+        showThumbs={false}
+        showStatus={false}
+        centerMode
+        centerSlidePercentage={33.33} // Show 3 images at a time
+        dynamicHeight={false}
+        interval={2000}
+      >
+        <div>
+          <img src={rewaterInsures2} alt="Image 1" />
+        </div>
+        <div>
+          <img src={rewaterInsures3} alt="Image 2" />
+        </div>
+        <div>
+          <img src={rewaterInsures4} alt="Image 3" />
+        </div>
+        <div>
+          <img src={rewaterInsures5} alt="Image 4" />
+        </div>
+        <div>
+          <img src={rewaterInsures6} alt="Image 6" />
+        </div>
+        <div>
+          <img src={rewaterInsures7} alt="Image 7" />
+        </div>
+        <div>
+          <img src={rewaterInsures8} alt="Image 8" />
+        </div>
+        <div>
+          <img src={rewaterInsures9} alt="Image 9" />
+        </div>
+        <div>
+          <img src={rewaterInsures10} alt="Image 10" />
+        </div>
+        <div>
+          <img src={rewaterInsures11} alt="Image 11" />
+        </div>
+        <div>
+          <img src={rewaterInsures12} alt="Image 12" />
+        </div>
+        <div>
+          <img src={rewaterInsures13} alt="Image 13" />
+        </div>
+        <div>
+          <img src={rewaterInsures14} alt="Image 14" />
+        </div>
+        <div>
+          <img src={rewaterInsures15} alt="Image 15" />
+        </div>
+        <div>
+          <img src={rewaterInsures16} alt="Image 16" />
+        </div>
+        <div>
+          <img src={rewaterInsures17} alt="Image 17" />
+        </div>
+        <div>
+          <img src={rewaterInsures18} alt="Image 18" />
+        </div>
+      </Carousel>
+    </div>
+  );
+};
+
 const Rewater = () => {
   const my_func = () => {
     if (document.getElementById("player").paused) {
@@ -85,10 +188,13 @@ const Rewater = () => {
         <div style={{ textAlign: "center" }}>
           <p className="pera-of-rcyl">WHY RECYCLE WATER ?</p>
         </div>
+        <div>
+          <ImageCarousel />
+        </div>
         <div className="carousel_images">
-          <div>
+          {/* <div>
             <img src="assets/ngo/spin.svg" />
-          </div>
+          </div> */}
 
           <div>{/* <img src={ImageOne} /> */}</div>
           <div>{/* <img src={ImageTwo} /> */}</div>
@@ -185,35 +291,37 @@ const Rewater = () => {
               </p>
             </div>
           </div>
-          <div className="vidImage" onClick={my_func}>
+          <div className="vidImage" >
             <video
               controls
+              preload="metadata"
               id="player"
               poster={Shipra_River}
               className="rivar-imag"
             >
               <source src={Rewater_video} type="video/mp4" />
             </video>
-            <img id="play_btn" src={PLAY_icon} className="play_ic" />
+            {/* <img id="play_btn" src={PLAY_icon} className="play_ic" /> */}
           </div>
           {/* part two */}
-          <div className="vid-Image" onClick={my_func}>
+          <div className="vid-Image">
             <video
-              controls
               id="player"
               poster={Shipra_River}
               className="rivar_Image"
+              controls
+              preload="metadata"
             >
               <source src={Rewater_video} type="video/mp4" />
             </video>
-            <img id="play_btn" src={PLAY_icon} className="play_ic" />
+            {/* <img id="play_btn" src={PLAY_icon} className="play_ic" /> */}
           </div>
         </div>
       </div>
       {/* section five */}
       <div style={{ marginTop: "10%", width: "100%" }}>
         {/* <div><img src={ rewaterInsures1} /></div> */}
-        <div className="insures">
+        {/* <div className="insures">
           <div>
             <img src={rewaterInsures2} className="insures-img" />
           </div>
@@ -290,7 +398,8 @@ const Rewater = () => {
           <div>
             <img src={rewaterInsures26} className="insures-arrow" />
           </div>
-        </div>
+        </div> */}
+        <ImageCarouselRewaterEnsure />
       </div>
       {/* section six */}
       <div>

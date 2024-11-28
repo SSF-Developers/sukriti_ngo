@@ -311,3 +311,67 @@
     }
 }
 
+
+/* Center the carousel container */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    /* background: #f4f4f4; */
+  }
+  
+  /* Set overall carousel styles */
+  .carousel {
+    width: 100%; /* Adjust width as needed */
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 30vh;
+  }
+  
+  /* Style each slide */
+  .carousel .slide {
+    position: relative;
+    padding: 10px; /* Add padding */
+    margin: 0 10px; /* Space between slides */
+    box-sizing: border-box;
+    background: #fff; /* Optional: add background */
+    border-radius: 8px;
+    text-align: center; /* Center text */
+  }
+  
+  /* Styling the images */
+  .carousel .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop and fit images inside the slide */
+    border-radius: 8px;
+  }
+  
+  /* Add text overlay */
+  .carousel .slide .overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Highlight the active slide */
+  .carousel .slide.selected {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Styling for carousel control dots */
+  .carousel .control-dots {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
