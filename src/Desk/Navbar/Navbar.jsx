@@ -45,7 +45,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <button type="button" onClick={fileOpen} className="but-of-nav">press </button>
+        {/* <button type="button" onClick={fileOpen} className="but-of-nav">press </button> */}
       <dropdown className="dropDown" onClose={fileClose}  dropdown={dropdown}>
       <div className="navi-bar">
           <Link to="/" className="container-of-nav-text">

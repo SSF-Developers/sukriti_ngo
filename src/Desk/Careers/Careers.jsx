@@ -948,7 +948,7 @@ const Careers = () => {
           {" "}
           APPLY NOW
         </button>
-        <modal onClose={closePage} open={open}>
+        {/* <modal onClose={closePage} open={open}>
           <div style={{ width: "50%"}}>
             <div>
               <h3>DETAILS</h3>
@@ -1002,7 +1002,7 @@ const Careers = () => {
 
             </form>
           </div>
-        </modal>
+        </modal> */}
       </div>
 
 
