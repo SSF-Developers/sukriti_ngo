@@ -42,6 +42,9 @@ const Navbar = () => {
             <Link to="/contact" className="container-of-nav-text">
               CONTACT US
             </Link>
+            <Link to="https://dashboard-mis.sukriti.ngo/login" className="container-of-nav-text">
+              MIS Dashboard
+            </Link>
           </div>
         </div>
 
